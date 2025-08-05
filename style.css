@@ -145,3 +145,31 @@ body {
 .hidden {
   display: none;
 }
+
+.contact-actions button {
+  background-color: #007BFF;    /* Bold blue background */
+  color: white;                 /* White icon on blue */
+  padding: 8px;
+  border-radius: 6px;
+  margin-left: 5px;
+  border: none;
+  font-size: 20px;              /* Larger icons */
+  transition: all 0.2s;
+}
+
+.contact-actions button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1);
+}
+
+.contact-actions i {
+  pointer-events: none;         /* Ensures full click on button */
+  }
+
+.contact-actions button.delete-btn {
+  background-color: #dc3545;
+}
+
+.contact-actions button.delete-btn:hover {
+  background-color: #b02a37;
+}
