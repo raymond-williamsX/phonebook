@@ -30,8 +30,10 @@ function displayContacts() {
         ✉️ ${contact.email}
       </div>
       <div class="contact-actions">
-        <button onclick="editContact(${index})"><i class="fas fa-edit"></i></button>
-        <button onclick="deleteContact(${index})"><i class="fas fa-trash-alt"></i></button>
+        <button onclick="editContact(${index})"><i class="fas fa-edit">Edit</i></button>
+<button class="delete-btn" onclick="deleteContact(${index})">
+  <i class="fas fa-trash-alt">Delete</i>
+</button>
       </div>
     `;
     contactList.appendChild(div);
