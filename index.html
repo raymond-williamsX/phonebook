@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Phonebook</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+  <div class="container">
+    <h1 class="title">📞 Phonebook</h1>
+    <button id="add-contact-btn"><i class="fas fa-plus"></i> Add Contact</button>
+    
+    <h2 class="subtitle">📋 Saved Contacts</h2>
+    <div id="contact-list"></div>
+  </div>
+
+  <!-- MODAL -->
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <form id="contact-form">
+        <input type="file" id="profile-pic" accept="image/*" />
+        <input type="text" id="name" placeholder="Name" required />
+        <input type="text" id="address" placeholder="Address" required />
+        <input type="tel" id="phone" placeholder="Phone Number" required />
+        <input type="email" id="email" placeholder="Email" required />
+        <button type="submit"><i class="fas fa-save"></i> Save Contact</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
